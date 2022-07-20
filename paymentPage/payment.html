@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+  
+</head>
+<body>
+    <div class="smain">
+        <div class="smain1">
+            <div class="smain11">
+                <img src="giftcard.PNG" alt="">
+                <a href="">Reedem</a>
+            </div>
+            <div class="smain12">
+                <input type="radio" id="hello"> Credit Card
+              
+                <div class="smain122">
+                    <img src="creditcard.PNG" alt="">
+                </div>
+                <div class="smain123">
+                    <div class="flex smb">
+                        <p>CARD NUMBER*</p>
+                        <p>Expiration Date*</p>
+                        <p>CVV*</p>
+                    </div>
+                    <div class="flex smb">
+                        <input type="text" placeholder="XXXX XXXX XXXX" id="cardno">
+                        <input type="text" placeholder="MM/YY" id="date">
+                        <input type="text" id="cvv">
+                    </div>
+                    <div class="margin">
+                        <p>Billing Address</p>
+                        <p>Suraj Kushwaha</p>
+                        <p>Address1</p>
+                        <p>Address2</p>
+                        <p>Mobile no</p>
+                        <p><a href="">Change</a></p>
+                    </div>
+                   
+                </div>
+            </div>
+            
+            <div class="smain13">
+                <input type="radio">
+                <img src="paypal.PNG" alt="">
+            </div>
+            <div class="smain13">
+                <input type="radio">
+                <img src="klarana.PNG" alt="">
+                <p class="low">Klarna is only available to ship to certain countries</p>
+            </div>
+            <div>
+               <div class="smain13">
+                <input type="radio" id="hello1">
+                <img src="afterpay.PNG" alt="">
+                <p>Instant Decision - 4 interest-free installments of $229.50</p>
+               </div>
+                <div class="smain13block">
+                    <p>You will be redirected to the Afterpay website to fill out your payment information. You will be redirected back to our site to complete your order. Please note: Afterpay can only be used as a payment method for orders with a shipping and billing address within the US.</p>
+                    <div class="grid">
+                      <div>
+                        <img src="p1.PNG" alt="">
+                        <p>$229.50</p>
+                        <p>First Installment</p>
+                      </div>
+                      <div>
+                        <img src="p1.PNG" alt="">
+                        <p>$229.50</p>
+                        <p>2 weeks later</p>
+                      </div>
+                      <div>
+                        <img src="p1.PNG" alt="">
+                        <p>$229.50</p>
+                        <p>4 weeks later</p>
+                      </div>
+                      <div>
+                        <img src="p1.PNG" alt="">
+                        <p>$229.50</p>
+                        <p>6 weeks later</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="smain2">
+          <div class="smain21">
+            <div>
+              <p>Subtotal</p>
+              <p>Shipping</p>
+              <p>Estimated Tax</p>
+              <p>Total</p>
+            </div>
+            <div>
+              <p>$858.00</p>
+              <p>$60.00</p>
+              <p>$0.00</p>
+              <p>$918.00</p>
+            </div>
+            <div>
+              <button>REVIEW ORDER</button>
+            </div>
+            <div class="promo">
+              <p>Promo Code</p>
+              <p id="plus">+</p>
+             
+            </div>
+            <div class="smain21hide">
+              
+              <input type="text">
+              <button>Apply</button>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("hello").addEventListener("click",fun)
+
+    function fun(){
+      let img =  document.querySelector(".smain123")
+      img.style.visibility = "visible"
+      img.style.height = "300px"
+      let img1 =  document.querySelector(".smain13block")
+    img1.style.visibility = "hidden"
+    img1.style.height = "3px"
+      
+    }
+    document.getElementById("hello1").addEventListener("click",fun1)
+
+    function fun1(){
+    let img =  document.querySelector(".smain13block")
+    img.style.visibility = "visible"
+    img.style.height = "200px"
+    let img1 =  document.querySelector(".smain123")
+      img1.style.visibility = "hidden"
+      img1.style.height = "3px"
+
+   }
+
+   document.getElementById("plus").addEventListener("click",fun3)
+
+function fun3(){
+let img =  document.querySelector(".smain21hide")
+img.style.visibility = "visible"
+img.style.height = "100px"
+
+
+}
+</script>

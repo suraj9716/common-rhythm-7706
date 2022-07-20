@@ -1,0 +1,151 @@
+.smain{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    /* height: 200px; */
+}
+.smain1{
+    width: 60%;
+    /* border: 2px solid black; */
+}
+.smain2{
+    width: 30%;
+    /* border: 2px solid teal; */
+}
+.smain11{
+    background-color: #F7F6F2;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+   padding: 10px;
+}
+.smain11>a{
+    margin-left: 10px;
+}
+.smain12{
+    margin-top: 10px;
+    border: 1px solid;
+    padding: 10px;
+}
+.smain123{
+/* border: 2px solid red; */
+visibility: hidden;
+
+height: 0px;
+transition: all .5s ease;
+}
+.smain13block{
+/* border: 2px solid red; */
+visibility: hidden;
+
+height: 0px;
+transition: all .5s ease;
+}
+.flex{
+display: flex;
+justify-content: space-around;
+}
+.smb{
+margin-right: 80px;
+}
+.smb>input{
+
+height: 35px;
+}
+.margin{
+margin-left: 20px;
+}
+.smain13{
+
+align-items: center;
+padding: 10px;
+border: 1px solid;
+}
+.smain13>img{
+margin-left: 10px;
+}
+.low{
+color: rgb(150, 149, 149);
+}
+.smain13block>p{
+padding: 10px;
+font-size: 13px;
+
+}
+.grid{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+width: 70%;
+margin: auto;
+
+text-align: center;
+}
+.smain21{
+display: grid;
+border: 1px solid;
+grid-template-areas:
+"a b"
+"c c"
+"d d"
+;
+padding: 10px;
+}
+.smain21>div:nth-child(1){
+grid-area: a;
+/* border: 2px solid; */
+}
+.smain21>div:nth-child(2){
+grid-area: b;
+/* border: 2px solid; */
+text-align: end;
+}
+.smain21>div:nth-child(3){
+grid-area: c;
+/* border: 2px solid; */
+}
+.smain21>div:nth-child(3)>button{
+background-color: #4b5666;
+color: white;
+width: 100%;
+height: 40px;
+letter-spacing: 5px;
+}
+.smain21>div:nth-child(4){
+grid-area: d;
+border: 2px solid;
+display: flex;
+justify-content: space-between;
+padding: 10px;
+}
+.smain21hide{
+visibility: hidden;
+transition: all .5s ease;
+display: flex;
+padding: 10px;
+justify-content: space-between;
+}
+.smain21hide>input{
+
+width: 60%;
+height: 40px;
+}
+.smain21hide>button{
+height: 40px;
+width: 30%;
+border: none;
+color: #4b5666;
+padding: 10px;
+background-color: white;
+border: 1px solid;
+
+}
+.smain21hide>button:hover{
+background-color: #4b5666;
+color: white;
+}
+.promo{
+margin-top: 10px;
+}
+#plus{
+cursor: pointer;
+}
