@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Clothing / Dresses */
+#type{
+    margin-top: 30px;
+    font-size: 13px;
+    text-align: center;
+    color: rgb(64, 64, 65);
+}
+#topBox{
+    border: 1px solid red;
+    width: 90%;
+    /* height: 800px; */
+    margin: 40px auto;
+    display: flex;
+}
+
+/* Topbox left side images */
+#topBox>#images{           
+    width: 55%;
+    height: auto;
+}
+#topBox>#images>#Top_img{
+    display: flex;
+}
+#topBox>#images>#Top_img>#left_SImg{
+    width: 18%;
+    height: auto;
+}
+#topBox>#images>#Top_img>#left_SImg>img{
+    margin-bottom: 10px;
+}
+#topBox>#images>#Top_img>#left_SImg>img:hover{
+    border: 2px solid;
+}
+#topBox>#images>#Top_img>#big_img{
+    width: 82%;
+    height: auto;
+}
+#topBox>#images>#Top_img>#big_img>img{
+    width: 100%;
+}
+/* complete the look --text */
+#topBox>#images>p{
+    margin: 50px 0px 20px 0px;
+    font-size: 19px;
+}
+#topBox>#images>#comp_look{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#topBox>#images>#comp_look>div{
+    width: 31%;
+    height: 370px;
+}
+#topBox>#images>#comp_look>div>img{
+    width: 100%;
+}
+#topBox>#images>#comp_look>div>p{
+    font-size: 13px;
+    color: rgb(64, 64, 65);
+}
+
+/* topbox product detail --middle part */
+#topBox>#Prod_detail{
+    border: 1px solid red;
+    width: 35%;
+    height: 700px;
+    padding: 0px 60px;
+}
+#topBox>#Prod_detail>#price>#title{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+#topBox>#Prod_detail>#price>p,a{
+    margin:10px;
+}
+
+/* topbox right side small images */
+#topBox>#right_img{
+    width: 10%;
+    height: 972px;
+    background-color: #f7f6f2;
+}
+#topBox>#right_img>p{
+    padding:10px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+#topBox>#right_img>img{
+    margin: 5px 7px;
+    width: 88%;
+}
