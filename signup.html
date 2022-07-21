@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up </title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    
+
+    <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <h2>Create An Account</h2>
+    <!-- <div id="container">
+       
+      
+    </div> -->
+<!-- 
+    <div id="container2">
+
+    </div> -->
+
+     <div class="container">
+       
+      <label for="email"><b>Email*</b></label>
+
+        <input id="email" type="text" placeholder="Enter your email address" />
+
+       <label for="psw"><b>Password*</b></label>
+
+        <input type="password" placeholder="Password" name="" id="password" />
+
+       <label for="psw"><b>Mobile Number*</b></label>
+
+        <input type="text" placeholder="Enter your 10-digit mobile number *" name="" id="number" />
+
+           
+     
+      <p>Enter your mobile number to receive a verification code. This action does not enroll you in SMS marketing messages.</p>
+      
+      <button type="submit">Sign up</button>
+    </div>
+      <label>
+        <input type="checkbox" checked="checked" name="remember">
+        Sign me up to receive Anthropologie offers, promotions and other commercial messages. By creating an account, I agree to Anthropologie's Terms of Service and Privacy Policy. I may unsubscribe at any time. Creating an account will not enroll you in SMS marketing.
+      </label>
+     <h2>Already Have an Account?</h2>
+     <a href="login.html">SIGN IN</a> 
+    
+</body>
+</html>
+
+
+<script>
+    
+var form = document.querySelector("form");
+let LSData = JSON.parse(localStorage.getItem("userData"));
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  var data = {
+    email: form.email.value,
+    password: form.password.value,
+    number: form.number.value,
+  };
+  if (LSData != null && LSData.email === data.email) {
+    alert("Account already exist. Please Signin");
+    return;
+  }
+
+  localStorage.setItem("userData", JSON.stringify(data));
+  alert("Signup successful. Please Log in");
+  window.location.href="Login.html"
+  
+});
+
+
+</script>
+
