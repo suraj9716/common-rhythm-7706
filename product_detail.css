@@ -17,7 +17,7 @@ body{
 #topBox{
     border: 1px solid red;
     width: 90%;
-    /* height: 800px; */
+    height: auto;
     margin: 40px auto;
     display: flex;
 }
@@ -75,7 +75,7 @@ body{
 #topBox>#Prod_detail{
     border: 1px solid red;
     width: 35%;
-    height: 700px;
+    height: auto;
     padding: 0px 60px;
 }
 #topBox>#Prod_detail>#price>#title{
@@ -85,6 +85,122 @@ body{
 #topBox>#Prod_detail>#price>p,a{
     margin:10px;
 }
+#topBox>#Prod_detail>#selection>#choose_color{
+    margin: 15px 0px;
+}
+#topBox>#Prod_detail>#selection>#choose_color>img{
+    width: 20px;
+    border-radius: 50% 50%;
+    margin-right: 5px;
+}
+#topBox>#Prod_detail>#selection>#choose_color>img:hover{
+    width: 22px;
+}
+#topBox>#Prod_detail>#selection>#fit{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0px;
+}
+#topBox>#Prod_detail>#selection>#fit>p{
+    height: 30px;
+    width: 100px;
+    background-color: lightgray;
+    text-align: center;
+}
+#topBox>#Prod_detail>#selection>#fit>p:hover{
+    border: 1px solid blue;
+}
+#topBox>#Prod_detail>#selection>#size{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0px;
+}
+#topBox>#Prod_detail>#selection>#size>p{
+    height: 30px;
+    width: 100px;
+    background-color: lightgray;
+    text-align: center;
+}
+#topBox>#Prod_detail>#selection>#size>p:hover{
+    border: 1px solid blue;
+}
+#topBox>#Prod_detail>#selection>#wsf{
+    border: 1px solid;
+    width: 180px;
+    height: 40px;
+    padding: 10px 10px;
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    font-size: 14px;
+}
+#topBox>#Prod_detail>#selection>#wsf>img{
+    width: 15px;
+}
+#topBox>#Prod_detail>#selection>#quant{
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    padding: 0px 10px;
+    margin: 10px 0px 30px 0px;
+}
+#topBox>#Prod_detail>#selection>#bas_btn{
+    width: 100%;
+    height: 50px;
+    color: #f7f6f2;
+    background-color: #4b5666;
+}
+#topBox>#Prod_detail>#selection>#bas_btn:hover{
+    background-color:white;
+    color: gray;
+}
+#topBox>#Prod_detail>#selection>#hotel{
+    margin: 50px 0px 20px 0px;
+}
+#topBox>#Prod_detail>#selection>#hotel>span{
+    font-size: 16px;
+    font-family:'Times New Roman', Times, serif;
+}
+/*Product Details */
+#Prod_detail>#pd_dim>.pd{
+    margin-bottom:40px ;
+}
+#Prod_detail>#pd_dim>.pd>p,ul{
+    font-size: 14px;
+    margin: 10px 0px;
+    color: #4b5666;
+}
+/* Dimensions */
+#Prod_detail>#pd_dim>.dim{
+    margin-bottom: 30px;
+}
+#Prod_detail>#pd_dim>.dim>b{
+    font-size: 13px;
+}
+/* shipping & returns */
+#Prod_detail>#pd_dim>#ship_return>h4{
+    margin: 20px 0px 30px 0px;
+}
+#Prod_detail>#pd_dim>#ship_return>#shipping>p{
+    margin: 20px 0px;
+    font-size: 14px;
+    color: #4b5666;
+}
+/* Table */
+#Prod_detail>#pd_dim>#ship_return>#shipping>#table th,td{
+    font-size: 14px;
+    padding: 15px;
+    color: #4b5666;
+}
+#Prod_detail>#pd_dim>#ship_return>#return>p{
+    font-size: 13px;
+    color: #4b5666;
+    margin: 15px 0px;
+}
+
 
 /* topbox right side small images */
 #topBox>#right_img{
