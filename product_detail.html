@@ -48,24 +48,42 @@
         </div>
 
         <div id="Prod_detail">
+
+            <!-- pop up checkout box -->
+            <section>
+                <div id="check_pop">
+                    <span>1 item added to your basket</span>
+                    <b style="margin-left: 20px;" id="cross">X</b>
+                    <div>
+                        <img src="https://images.urbndata.com/is/image/Anthropologie/4130370060072_044_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640" alt="error">
+                        <div>
+                            <p>The Somerset Maxi Dress</p>
+                            <p>$170.00</p>
+                            <p>Color: BLUE</p>
+                            <P>Size: XXS</P>
+                        </div>
+                    </div>
+                    <button id="checkout_btn">CHECKOUT</button>
+                </div> 
+            </section>
+
             <div id="price">
                 <p id="title" style="margin: 0px 0px 20px 0px;">The Somerset Maxi Dress</p>
                 <!-- link for product page ????? -->
-                <a href="" style="font-size: 14px;">The Somerset Collection by Anthropologie</a><br>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                <!-- give #(id name of review section) ?????-->
-                <a href="#" style="font-size: 14px;">(32)</a>    
-                <p style="color: gray;">$170.00</p>
+                <a href="productpage.html" style="font-size: 14px;">The Somerset Collection by Anthropologie</a><br>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true" style="color: gold;"></i>
+                <a href="#rat_info" style="font-size: 14px;">(32)</a>    
+                <p style="color: gray;" id="prod_price">$170.00</p>
                 <p style="font-size: 12px; color: gray;">Or 4 interest-free installments of $42.50 with</p>
                 <p ><b>Klarna</b> or <b>Afterpay</b></p>
             </div>
             <hr style="color:lightgray;">
             <div id="selection">
-                <p style="margin-top: 15px;;">Color: SLATE</p>
+                <p style="margin-top: 15px;;" class="color">Color: SLATE</p>
                 <div id="choose_color">
                     <img src="https://images.urbndata.com/is/image/Anthropologie/4130370060072_001_s?fit=constrain&hei=56&qlt=75" alt="error">
                     <img src="https://images.urbndata.com/is/image/Anthropologie/4130370060072_030_s?fit=constrain&hei=56&qlt=75" alt="error">
@@ -83,14 +101,14 @@
                     <p>Plus</p>
                 </div>
                 <p>Size*</p>
-                <div id="size">
-                    <p>XXS</p>
-                    <p>XS</p>
-                    <p>S</p>
-                    <p>M</p>
-                    <p>L</p>
-                    <p>XL</p>
-                </div>
+                <select id="size">
+                    <option>XXS</option>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select>
                 <div id="wsf" >
                     <img src="https://www.anthropologie.com/static/v3/images/true-fit-logo-32514b4bc8408921591c99abd103721b.svg" alt="error">
                     <p> Which Size Fits Me?</p>
@@ -111,7 +129,7 @@
                 </select>
                 <br>
                 <!-- functionality to ADD TO BASKET button ????? -->
-                <button id="bas_btn"><b>ADD TO BASKET</b> </button>
+                <button id="bas_btn" onclick="checkoutBox()"><b>ADD TO BASKET</b> </button>
                 <a href="#" style="font-size: 14px;">Add To Registry</a>
                 <a href="#" style="font-size: 14px; margin-left: 60px;">Add to Wish List</a>
                 <div id="hotel">
@@ -206,5 +224,117 @@
         </div>
        </div>
     </section>
+
+    <!-- Recommended to you -->
+    <section>
+        <b>Recommended For You</b>
+        <hr style="margin:20px 0px;">
+        <div id="r_img">
+            <div>
+                <img src="https://images.urbndata.com/is/image/Anthropologie/4112522160104_068_b2?$an-category$&qlt=80&fit=constrain" alt="error">
+                <p>Ruffled Halter Tank</p>
+            </div>
+            <div>
+                <img src="https://images.urbndata.com/is/image/Anthropologie/59370577_001_b2?$an-category$&qlt=80&fit=constrain" alt="error">
+                <p>Ruffled Cover-Up Midi Dress</p>
+            </div>
+            <div>
+                <img src="https://images.urbndata.com/is/image/Anthropologie/67116491_040_b2?$an-category$&qlt=80&fit=constrain" alt="error">
+                <p>Farm Rio Halter Maxi Dress</p>
+            </div>
+            <div>
+                <img src="https://images.urbndata.com/is/image/Anthropologie/69046175_011_b2?$an-category$&qlt=80&fit=constrain" alt="error">
+                <p>Bl-nk Stephanie Top</p>
+            </div>
+            <div>
+                <img src="https://images.urbndata.com/is/image/Anthropologie/4130347470050_059_b?$an-category$&qlt=80&fit=constrain" alt="error">
+                <p>Cloth & Stone Cross-Back Maxi Dress</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ratings & Reviews -->
+    <section>
+        <b>Ratings & Reviews</b>
+        <hr style="margin:20px 0px;">
+        <div id="rat_info">
+            <div>
+                <p>4.3 stars | 35 Reviews</p>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true" style="color: gold;"></i>
+            </div>
+            <div>
+                <p>86% Recommended</p>
+                <i class="fa-regular fa-circle-check" style="font-size:30px; color: grey;"></i>
+            </div>
+            <div>
+                <p>Customers say True to Size</p>
+                <p>|--|--<i class="fa-solid fa-circle"></i>--|--|</p>
+            </div>
+        </div>
+        <div id="indi_rate">
+            <div>
+                <p>MyDarlings</p>
+                <p>Location: Williamsburg VA</p>
+                <p>Age: Over 55</p>
+                <p>Body Type: Hourglass</p>
+            </div>
+            <div>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <span style="float: right;">Jul 20, 2022</span>
+                <p style="font-size: 18px;">Color Me Happy</p>
+                <p>Love this comfy dress. Super versatile. Thank you for the pockets! I wore it for the fist time today and received 3 compliments before 10:00 in the morning. Color turquoise is so yummy.</p>
+                <p>Fits: True to Size</p>
+                <p>Fit Purchased: Plus</p>
+                <p>Size Purchased: 3x</p>
+                <p>Size Normally Worn: 2x or 3x</p>
+                <p>Yes, I recommend this product.</p>
+            </div>
+        </div>
+        <hr>
+        <div id="indi_rate">
+            <div>
+                <p>Supermodel</p>
+                <p>Location: CHICAGO, IL</p>
+                <p>Height: 5' 10"</p>
+                <p>BBody Type: Straight</p>
+            </div>
+            <div>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gainsboro;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: gainsboro;"></i>
+                <span style="margin-left: 540px;">Jul 20, 2022</span>
+                <p style="font-size: 18px;">Nice but</p>
+                <p>this dress is nice but it is not a goof fit for people with long torsos</p>
+                <p>Fits: True to Size</p>
+                <p>Fit Purchased: Standard</p>
+                <p>Size Purchased: s</p>
+                <p>Size Normally Worn: s</p>
+                <p>Yes, I recommend this product.</p>
+            </div>
+        </div>
+        <hr>
+        <button id="review_btn"><b>WRITE A REVIEW</b> </button>
+    </section>
+
+    <div id="like_share">
+        <p>Like it? Share it!</p>
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+    </div>
+
+    
 </body>
 </html>
+
+<script src="./product_detail.js"></script>

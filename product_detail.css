@@ -5,6 +5,8 @@
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    margin: auto;
 }
 
 /* Clothing / Dresses */
@@ -16,9 +18,9 @@ body{
 }
 #topBox{
     border: 1px solid red;
-    width: 90%;
+    /* width: 90%; */
     height: auto;
-    margin: 40px auto;
+    margin: 40px 0px;
     display: flex;
 }
 
@@ -73,7 +75,6 @@ body{
 
 /* topbox product detail --middle part */
 #topBox>#Prod_detail{
-    border: 1px solid red;
     width: 35%;
     height: auto;
     padding: 0px 60px;
@@ -113,19 +114,21 @@ body{
     border: 1px solid blue;
 }
 #topBox>#Prod_detail>#selection>#size{
+    height: 30px;
+    width: 100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 5px;
     margin: 20px 0px;
 }
-#topBox>#Prod_detail>#selection>#size>p{
+#topBox>#Prod_detail>#selection>#size>option{
     height: 30px;
     width: 100px;
     background-color: lightgray;
     text-align: center;
 }
-#topBox>#Prod_detail>#selection>#size>p:hover{
+#topBox>#Prod_detail>#selection>#size>option:hover{
     border: 1px solid blue;
 }
 #topBox>#Prod_detail>#selection>#wsf{
@@ -184,6 +187,12 @@ body{
 #Prod_detail>#pd_dim>#ship_return>h4{
     margin: 20px 0px 30px 0px;
 }
+#Prod_detail>#pd_dim>#ship_return>h4:hover{
+    cursor: pointer;
+}
+#Prod_detail>#pd_dim>#ship_return>#shipping{
+    display: none;
+}
 #Prod_detail>#pd_dim>#ship_return>#shipping>p{
     margin: 20px 0px;
     font-size: 14px;
@@ -195,12 +204,14 @@ body{
     padding: 15px;
     color: #4b5666;
 }
+#Prod_detail>#pd_dim>#ship_return>#return{
+    display: none;
+}
 #Prod_detail>#pd_dim>#ship_return>#return>p{
     font-size: 13px;
     color: #4b5666;
     margin: 15px 0px;
 }
-
 
 /* topbox right side small images */
 #topBox>#right_img{
@@ -216,4 +227,112 @@ body{
 #topBox>#right_img>img{
     margin: 5px 7px;
     width: 88%;
+}
+
+
+/* Recommended to you */
+#r_img{
+   border: 1px solid green;
+   display: flex;
+   gap: 20px;
+   margin: 30px 0px 100px 0px;
+}
+#r_img>div>img{
+    width: 100%;
+}
+#r_img>div>p{
+    font-size: 14px;
+    color: #4b5666;
+    margin: 10px 0px;
+}
+
+/* Ratings & Reviews */
+#rat_info{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+}
+#rat_info>div{
+    background-color: lightgrey;
+    width: 33%;
+    height: 120px;
+    text-align: center;
+     padding: 30px 0px;
+}
+#rat_info>div>p{
+    margin-bottom: 10px;
+}
+#indi_rate{
+    display: flex;
+    gap: 300px;
+    padding: 30px;
+}
+#indi_rate>div>p,span{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+#review_btn{
+    width: 30%;
+    height: 50px;
+    background-color:white;
+    color: gray;
+    margin: 40px 430px;
+}
+#review_btn:hover{
+    color: #f7f6f2;
+    background-color: #4b5666;
+}
+#like_share{
+    border: 1px solid red;
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+#like_share>p{
+    font-size: 13px;
+    margin: 20px 0px 10px 0px;
+}
+#like_share>i{
+    font-size: 25px;
+    margin: 5px;
+    color: rgb(28, 111, 145);
+}
+#like_share>i:hover{
+    color: black;
+}
+
+/* pop checkout box */
+#check_pop{
+    width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 20px;
+    margin: -50px 0px 0px 300px;
+    position: fixed;
+    float: right;
+    display: none;
+    /* z-index: 9; */
+    background-color: aliceblue;
+}
+#check_pop>div{
+    display: flex;
+    gap: 20px;
+}
+#check_pop>#checkout_btn{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    color: aliceblue;
+    background-color: #4b5666;
+}
+#check_pop>#checkout_btn:hover{
+    cursor: pointer;
+}
+#check_pop>div>img{
+    width: 40%;
+}
+#check_pop>div>div>p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+#check_pop>#cross:hover{
+    cursor: pointer;
 }
