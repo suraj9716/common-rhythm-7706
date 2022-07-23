@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="productpage.css" />
+</head>
+<body>
+    <input type="text" placeholder="Search" id="search" oninput="search_data()">
+    <div id="pagination">
+        <a href="">Previous</a>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href="">6</a>
+        <a href="">Next</a>
+    </div>
+    <div id="sort">
+        <select name="" id="handle" onchange="handlesort()">
+            <option value="">Featured</option>
+            <option value="htl">Price:High to Low</option>
+            <option value="lth">Price:Low to High</option>
+           
+        </select>
+    </div>
+   
+    
+    
+    <div id="container">
+        <div id="side_bar">
+           
+            <h3>FILTER BY </h3>
+            <select name="" id="filter" onchange="handlefilter()">
+                <option value="">SELECT</option>
+                <option value="men">MEN</option>
+                <option value="women">WOMEN</option>
+                <option value="boys">BOYS</option>
+                <option value="girls">GIRLS</option>
+            </select>
+          
+            <h3>CATEGORIES</h3>
+            <select name="" id="categories" onchange="handlecategories()">
+                <option value="">SELECT</option>
+                <option value="Short Kurta">Short Kurta</option>
+                <option value="Kurta with Palazzos">Kurta with Palazzos</option>
+                <option value="Dupatta">Dupatta</option>
+                <option value="Kurta with Dhoti Pants">Kurta with Dhoti Pants</option>
+                <option value="Kurta with Pyjama">Kurta with Pyjama</option>
+            </select>
+           
+            <h3>BRANDS</h3>
+            <select name="" id="brand" onchange="handlebrand()">
+                <option value="">SELECT</option>
+                <option value="house_of_pataudi">House of Pataudi</option>
+                <option value="Manyavar">Manyavar</option>
+                <option value="Jompers">Jompers</option>
+                <option value="imara">Imara</option>
+                <option value="Libas">Libas</option>
+                <option value="biba">Biba</option>
+                <option value="Dupatta Bazaar">Dupatta Bazaar</option>
+            </select>
+          
+
+            <h3>COLOR</h3>
+            <select name="" id="color" onchange="handlecolor()">
+                <option value="">select</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="pink">Gray</option>
+                <option value="blue">Blue</option>
+                <option value="beige">Beige</option>
+                <option value="maroon">Maroon</option>
+                <option value="grey">Grey</option>
+                <option value="orange">Orange</option>
+            </select>
+
+            <h3>IN STOCK</h3>
+            <select name="" id="stock" onchange="handlestock()">
+                <option value="">Select</option>
+                <option value="In Stock">Instock</option>
+                <option value="Out of Stock">Out of Stock</option>
+            </select>
+        </div>
+        
+        <div id="items"></div>
+
+       
+    </div>
+
+</body>
+</html>
+<script src="./productpage.js"></script>
+</body>
+</html>

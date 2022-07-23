@@ -37,6 +37,7 @@ body{
     height: auto;
 }
 #topBox>#images>#Top_img>#left_SImg>img{
+    width: 90%;
     margin-bottom: 10px;
 }
 #topBox>#images>#Top_img>#left_SImg>img:hover{

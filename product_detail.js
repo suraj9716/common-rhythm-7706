@@ -1,3 +1,22 @@
+//getting product data from productpage (through local storage) and update it on product_deatail page
+let prodInfo=JSON.parse(localStorage.getItem("moveitems"));
+console.log(prodInfo)
+displayData(prodInfo);
+function displayData(data){
+    data.forEach((ele)=>{
+        let images=ele.images.split("|");
+        console.log(images);
+        document.querySelector("#big_img > img").src=images[0];
+        document.querySelector("#left_SImg > img:nth-child(1)").src=images[1];
+        document.querySelector("#left_SImg > img:nth-child(2)").src=images[2];
+        document.querySelector("#left_SImg > img:nth-child(3)").src=images[3];
+        document.querySelector("#left_SImg > img:nth-child(4)").src=images[4];
+        document.querySelector("#price > #title").innerText=ele.title;
+        document.querySelector("#price > #prod_price").innerText=`$ ${ele.variant_price}`;
+        document.querySelector("#selection > .color").innerText=`Color: ${ele.actual_color}`
+    });   
+}
+
 // pop_up closed checkout box && pushing data in local storage
 let prod_details = JSON.parse(localStorage.getItem("prod_details")) || [];
 function checkoutBox(){
@@ -15,6 +34,14 @@ function checkoutBox(){
     console.log(prod_info);
     prod_details.push(prod_info);
     localStorage.setItem("prod_details",JSON.stringify(prod_details))
+
+    // update values on popup checkout box
+    document.querySelector("#check_pop > span").innerText=`${quantity} item added to your basket`;
+    document.querySelector("#update_pop > img").src=image;
+    document.querySelector("#update_pop > div > p:nth-child(1)").innerText=name;
+    document.querySelector("#update_pop > div > p:nth-child(2)").innerText=price;
+    document.querySelector("#update_pop > div > p:nth-child(3)").innerText=color;
+    document.querySelector("#update_pop > div > p:nth-child(4)").innerText=`Size: ${size}`;
 }
 function ProductInfo(i,n,p,c,f,s,q){
     this.image=i;
