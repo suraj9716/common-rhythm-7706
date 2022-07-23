@@ -46,16 +46,13 @@ body {
   
   
   .modal {
-  /* display: none;  */
+  
   position: fixed; 
   z-index: 1; 
   left: 300px;
   top: 0;
-  width: 40%; /* Full width */
+  width: 40%; 
   height: 650px;
-  /* overflow: auto; Enable scroll if needed */
-   /* background-color: #505050;  */
-  /* background-color: #505050;  */
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   padding-top: 60px;
   }
@@ -63,13 +60,11 @@ body {
   /* Modal Content/Box */
   .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  /* border: 1px solid #888; */
-  width: 50%; /* Could be more or less, depending on screen size */
+  margin: 5% auto 15% auto; 
+  width: 50%;
   }
   
 
-  
   /* Add Zoom Animation */
   .animate {
   -webkit-animation: animatezoom 0.6s;
@@ -95,7 +90,7 @@ body {
   
   
   
-   */ */
+   */
   /* #container p{
     margin-left: 20px;
   }
@@ -107,23 +102,34 @@ body {
   
   
 
-  a{
-    text-decoration: none;
-    color: #26262c;
-    border: 1px solid black;
-    width: 80%;
-  }
-  a:hover{
-         background-color: #26262c;
-         color: white;
-  }
+  
 
   p{
     text-align: center;
 
   }
-  /* label{
+  h3{
+    text-align: center;
+    font-family: sans-;
+    color: #333333;
 
-  } */
+ }
+  #btn{
+    background-color: white;
+  text-decoration: none;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border: 1px solid black;
+  color: black;
+  }
+  #btn:hover{
+  background-color: #26262c;
+
+  }
+  
   
   
