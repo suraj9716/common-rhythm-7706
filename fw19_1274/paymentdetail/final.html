@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+          
+            width: 20%;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="https://i.gifer.com/origin/a1/a1d81f564eeb1468aefbcfd54d1571b8_w200.gif" id="img" alt="">
+        <h1 id="pay">Payment is processing</h1>
+    </div>
+</body>
+</html>
+<script>
+  setTimeout(function(){
+    let img = document.getElementById("img")
+    let pay = document.getElementById("pay")
+    img.src = "https://fcs3pub.s3.amazonaws.com/photo-book/images/payment/success.gif"
+    pay.innerText = "Payment Successfull"
+  },3000)
+</script>
