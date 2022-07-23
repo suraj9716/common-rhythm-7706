@@ -1,3 +1,11 @@
+// for navbar part
+let btn = document.getElementById("btn2")
+btn.addEventListener("click",signin)
+function signin(){
+    window.location.href = "login.html"
+} 
+
+
 //getting product data from productpage (through local storage) and update it on product_deatail page
 let prodInfo=JSON.parse(localStorage.getItem("moveitems"));
 console.log(prodInfo)
@@ -84,5 +92,18 @@ let shipping_return=document.querySelector("#ship_return > h4").addEventListener
         }
     }
    
-
+// for footer part
+function sub(){
+    let email = document.getElementById("email").value
+    // console.log(value(email))
+    if(email==""){
+        alert("Please enter email")
+    }
+    else if(!email.includes("@")){
+        alert("Please enter a valid email")
+    }
+    else{
+        alert("Email Subscribed Succesfully")
+    }
+}
     
