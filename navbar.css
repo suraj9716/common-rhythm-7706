@@ -160,8 +160,6 @@ a{
     
 }
 
-
-
 #dropbtn {
     background-color: white;
     /* color: white; */
@@ -175,13 +173,13 @@ a{
   }
   
   #dropdown {
-    /* position: relative; */
+    position: relative;
     display: inline-block;
   }
   
   #dropdown-content {
     display: none;
-    /* position: absolute; */
+    position: absolute;
     background-color: #f1f1f1;
     /* min-width:; */
     margin: auto;
