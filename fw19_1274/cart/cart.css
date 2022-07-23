@@ -1,7 +1,12 @@
 :root{
     --red : red
      }
-    
+     nav{
+        position: sticky;
+        top: 0;
+        background-color: white;
+        width: 102%; 
+      }
 
      #p_top{
         height: 50px;

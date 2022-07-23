@@ -12,8 +12,12 @@ body{
 
 /* for navbar part */
 #navbar{
-    width: 110.5%;
+    width: 115.5%;
     margin-left: -5.4%;
+    position: sticky;
+    background-color: white;
+    top: 0;
+  
 }
 #p_top{
     height: 50px;

@@ -6,7 +6,12 @@
     <title>Document</title>
 
     <style>
-      
+      nav{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 102%; 
+}
       #p_top{
     height: 50px;
     width: 100%;
@@ -1227,16 +1232,21 @@ a{
   </body>
 </html>
 <script>
-  var address = JSON.parse(localStorage.getItem("address"))
+  var address = JSON.parse(localStorage.getItem("address")) || []
+  
   function ship() {
+    address =[]
     let add = {
       name: document.getElementById("name").value,
       add1: document.querySelector(".input1").value,
       add2: document.querySelector("#city").value,
       phone: document.querySelector(".input2").value,
     };
-    console.log(add)
+   
+    address.push(add)
+    
     localStorage.setItem("address",JSON.stringify(address))
+    window.location.href = "../../fw19_1274/checkout/payment.html"
   }
   function sub(){
         let email = document.getElementById("email").value

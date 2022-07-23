@@ -206,10 +206,10 @@
                     </div>
                     <div class="margin">
                         <p>Billing Address</p>
-                        <p>Suraj Kushwaha</p>
-                        <p>Address1</p>
-                        <p>Address2</p>
-                        <p>Mobile no</p>
+                        <p id="name">Suraj Kushwaha</p>
+                        <p id="add1">Address1</p>
+                        <p id="add2">Address2</p>
+                        <p id="mob">Mobile no</p>
                         <p><a href="">Change</a></p>
                     </div>
                    
@@ -267,13 +267,13 @@
               <p>Total</p>
             </div>
             <div>
-              <p id="subtotal">$858.00</p>
+              <p id="subtotal"></p>
               <p>$60.00</p>
               <p>$0.00</p>
-              <p id="grandtotal">$918.00</p>
+              <p id="grandtotal"></p>
             </div>
             <div>
-              <button>REVIEW ORDER</button>
+              <button onclick="place()">PLACE ORDER</button>
             </div>
             <div class="promo">
               <p>Promo Code</p>
@@ -412,7 +412,7 @@
 </html>
 <script>
     document.getElementById("hello").addEventListener("click",fun)
-
+    let add = JSON.parse(localStorage.getItem("address"))
     function fun(){
       let img =  document.querySelector(".smain123")
       img.style.visibility = "visible"
@@ -420,6 +420,11 @@
       let img1 =  document.querySelector(".smain13block")
     img1.style.visibility = "hidden"
     img1.style.height = "3px"
+    
+    document.getElementById("name").innerText = add[0].name
+    document.getElementById("add1").innerText = add[0].add1
+    document.getElementById("add2").innerText = add[0].add2
+    document.getElementById("mob").innerText = add[0].phone
       
     }
     document.getElementById("hello1").addEventListener("click",fun1)
@@ -456,14 +461,17 @@ function sub(){
             alert("Email Subscribed Succesfully")
         }
     }
-
+let price = JSON.parse(localStorage.getItem("prod_details"))
+ let total = document.querySelector("#subtotal").innerText = price[0].price
+ document.querySelector("#grandtotal").innerText = "$1019";
+console.log(price[0].price)
   function promoCode(){
   event.preventDefault()
   let pcode=document.querySelector("#promo").value
   console.log(pcode)
   if(pcode=="masai30"){
-    let total=+document.querySelector("#subtotal").innerText
-    let subtotal=+document.querySelector("#grandtotal").innerText
+    // document.querySelector("#subtotal").innerText = total
+    document.querySelector("#grandtotal").innerText = "706";
     console.log(total,subtotal)
     if(total==subtotal){
     let dis=(total*70)/100
@@ -475,5 +483,8 @@ function sub(){
    
     alert("Promo code is not valid")
   }
+}
+let place = ()=>{
+  window.location.href = "../../fw19_1274/paymentdetail/paymentDetail.html"
 }
 </script>

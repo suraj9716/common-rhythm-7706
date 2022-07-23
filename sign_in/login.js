@@ -26,7 +26,7 @@
       ) {
         alert("Log In Successful");
         localStorage.setItem("login", JSON.stringify(userData));
-        window.location.href = "Home.html";
+        window.location.href = "../../home page/index.html";
       } else {
         alert("user Does Not Exists");
       }

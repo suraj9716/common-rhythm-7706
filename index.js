@@ -2,7 +2,7 @@
 let btn = document.getElementById("btn2")
 btn.addEventListener("click",signin)
 function signin(){
-    window.location.href = "login.html"
+    window.location.href = "../../sign_in/login.html"
 } 
 
 
@@ -55,4 +55,12 @@ function sub(){
     else{
         alert("Email Subscribed Succesfully")
     }
+}
+let cart = ()=>{
+  window.location.href = "../../fw19_1274/cart/cart.html"
+}
+
+let product = ()=>{
+  window.location.href = "../../product/productpage.html"
+  console.log("hello")
 }

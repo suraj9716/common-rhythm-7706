@@ -9,6 +9,12 @@
     
     
 }
+nav{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 102%; 
+}
 #text{
     padding-top: 10px;
     font-size: 18px;

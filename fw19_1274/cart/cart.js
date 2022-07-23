@@ -157,3 +157,15 @@ function promoCode(){
 }
 dispcart(data)
 total();
+
+let procees = ()=>{
+  var userData = JSON.parse(localStorage.getItem("userData"));
+  console.log(userData)
+  if(userData == null){
+    alert("please login first")
+    window.location.href = "../../sign_in/login.html"
+  }
+  else{
+    window.location.href = "../../fw19_1274/addresspage/address.html"
+  }
+}

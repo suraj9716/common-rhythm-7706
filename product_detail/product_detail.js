@@ -71,7 +71,7 @@ let cross=document.querySelector("#cross").addEventListener("click",closeCheckou
 
 //redirected to cart page 
 let ckeckout=document.querySelector("#checkout_btn").addEventListener("click",function(){
-    window.location.href="cart.html"
+    window.location.href="../../fw19_1274/cart/cart.html"
 })
 
 
